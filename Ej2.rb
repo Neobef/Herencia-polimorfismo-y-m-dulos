@@ -48,56 +48,68 @@ class Animal
 end
 
 class Ave < Animal
-    include Caminante
-    include Carnivoro
 end
 
 class Mamifero < Animal
-    include Caminante
 end
 
 class Insecto < Animal
-    include Volador
-    include Caminante
-    include Herbivoro
 end
 
 class Pinguino < Ave
+    include Caminante
+    include Carnivoro
     include Nadador
 end
 
 class Paloma < Ave
+    include Caminante
+    include Carnivoro
     include Volador
 end
 
 class Pato < Ave
+    include Caminante
+    include Carnivoro
     include Volador
     include Nadador
     include Herbivoro
 end
 
 class Perro < Mamifero
+    include Caminante
     include Nadador
     include Carnivoro
 end
 
 class Gato < Mamifero
+    include Caminante
     include Nadador
     include Carnivoro
 end
 
 class Vaca < Mamifero
+    include Caminante
     include Herbivoro
 end
 
 class Mosca < Insecto
+    include Volador
+    include Caminante
+    include Herbivoro
     include Carnivoro
 end
 
 class Mariposa < Insecto
+    include Volador
+    include Caminante
+    include Herbivoro
 end
 
 class Abeja < Insecto
+    include Volador
+    include Caminante
+    include Herbivoro
     include Carnivoro
 end
 
